@@ -1,0 +1,144 @@
+body {
+    background-image: linear-gradient(to bottom, #d1f1e8, #a3e4d7, #76d7c4, #48c9b0);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #FEFF86;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 1200px;
+    margin-bottom: 50px;
+  }  
+
+  header h1 {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    text-shadow: 2px 2px #ffffff;
+  }
+  
+  nav ul {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		nav li {
+			display: inline-block;
+			margin: 0 20px;
+		}
+
+		nav a {
+			color: #333333;
+			text-decoration: none;
+			font-size: 20px;
+			font-weight: bold;
+			transition: color 0.3s ease;
+		}
+
+		nav a:hover {
+			color: #ffffff;
+		}
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    background-color: #FEFF86;
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+    max-width: auto;
+    
+  }
+  
+  .hero h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    text-shadow: 2px 2px #ffffff;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 80px 0;
+  }
+  
+  .feature {
+    flex-basis: calc(25% - 20px);
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .feature p {
+    font-size: 16px;
+  }
+  
+  .feature a {
+    display: block;
+    background-color: #ffa500;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .feature a:hover {
+    background-color: #e13303;
+  }
+  
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

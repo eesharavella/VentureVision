@@ -1,0 +1,184 @@
+<html>
+<head>
+	<title>Travel Itinerary</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="main.js"></script>
+    <style>
+        /* Set font family and background color */
+        body {
+			background-image: linear-gradient(to bottom, #d1f1e8, #a3e4d7, #76d7c4, #48c9b0);
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			margin: 0;
+		}
+
+		header {
+			background-color: #FEFF86;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border-radius: 20px;
+			margin: auto;
+			max-width: 1200px;
+			margin-bottom: 50px;
+		}  
+
+		header h1 {
+			margin: 0;
+			text-align: center;
+			font-size: 48px;
+			font-weight: bold;
+			color: #333333;
+			text-shadow: 2px 2px #ffffff;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		nav li {
+			display: inline-block;
+			margin: 0 20px;
+		}
+
+		nav a {
+			color: #333333;
+			text-decoration: none;
+			font-size: 20px;
+			font-weight: bold;
+			transition: color 0.3s ease;
+		}
+
+		nav a:hover {
+			color: #ffffff;
+		}
+
+		main {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.container {
+			margin: 50px auto;
+			max-width: 600px;
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #ccc;
+			flex-basis: 48%;
+		}
+
+		.form-container {
+			background-color: #fff;
+			padding: 20px;
+			margin: 20px auto;
+			max-width: 600px;
+			border-radius: 10px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"],
+		input[type="date"],
+		input[type="number"] {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+    </style>
+</head>
+<body>
+    <header>
+		<h1>Bali: Itinerary</h1>
+		<nav>
+			<ul>
+				<li><a href="main.html">Home</a></li>
+				<li><a href="itenary.html">Travel Itinerary</a></li>
+                <li><a href="about.html">About</a></li>
+				<li><a href="destinations.html">Destinations</a></li>
+				<li><a href="things.html">Things to do</a></li>
+				<li><a href="hotels.html">Hotels</a></li>
+				<li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="photos.html">Photo's</a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+        <section class="container">
+            <h2>About Bali</h2>
+            <p>If you're planning a trip to Bali, here's a suggested travel itinerary to help you make the most of your time on this beautiful Indonesian island. On the first day, you can relax and explore your local area after checking into your hotel. On day two, head to Ubud to visit the Sacred Monkey Forest Sanctuary, explore the Tegalalang Rice Terrace, and visit the Ubud Palace and Market. On day three, take a surfing lesson at Kuta Beach, visit the Kuta Art Market, and enjoy the nightlife. Day four could be spent hiking up Mount Batur to watch the sunrise, visiting the Tirta Empul Temple, and relaxing at the Batur Natural Hot Spring. Day five can be spent exploring the beaches and water sports in Nusa Dua, visiting the Museum Pasifika, and enjoying a seafood dinner on the beach. On day six, go shopping in Seminyak's boutique stores and markets, relax at one of Seminyak's beach clubs, and visit the Pura Petitenget Temple. Finally, on day seven, check out of your hotel and depart from Bali. This itinerary covers a wide range of activities and attractions across Bali, including cultural sites, natural wonders, beaches, and nightlife, but of course, feel free to modify it to suit your interests and preferences.</p>
+        </section>
+    
+        <section class="container">
+            <h2>Popular Destinations</h2>
+            <ul>
+                <li>Ubud</li>
+                <li>Kuta Beach</li>
+                <li>Nusa Dua</li>
+                <li>Sanur Beach</li>
+                <li>Uluwatu Temple</li>
+            </ul>
+        </section>
+    </main>
+    
+    <div class="form-container">
+        <h2>Plan Your Trip</h2>
+        <form id="itineraryForm" onsubmit="return validateForm()">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required><br><br>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required><br><br>
+    
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required><br><br>
+    
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required><br><br>
+    
+            <label for="numTravelers">Number of Travelers:</label>
+            <input type="number" id="numTravelers" name="numTravelers" min="1" required><br><br>
+    
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" name="budget" min="0" required><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 VentureVision</p>
+    </footer>
+</body>
+</html>
